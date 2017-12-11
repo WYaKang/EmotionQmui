@@ -123,8 +123,27 @@ class ATEmotionPageViewCell: UICollectionViewCell {
         emotionHittingRects.removeAll()
         
         let contentSize = bounds.insetEdge(settings.padding).size
-        let emotionCountPerRow = (contentSize.width + settings.minimumHorizontalSpacing) / (settings.emotionSize.width + settings.minimumHorizontalSpacing)
-        let emotionHorizonSpacing = contentSize.width - emotionCountPerRow * settings.emotionSize.width
+        let emotionCountPerRow: Int = Int(contentSize.width + settings.minimumHorizontalSpacing) / Int(settings.emotionSize.width + settings.minimumHorizontalSpacing)
+        let emotionHorizonSpacing = flat((contentSize.width - CGFloat(emotionCountPerRow) * settings.emotionSize.width) / CGFloat(emotionCountPerRow - 1))
+        let emotionVerticalSpacing = flat((contentSize.height - CGFloat(settings.numberOfRows) * settings.emotionSize.height) / CGFloat(settings.numberOfRows - 1))
+        
+        var emotionOrigin = CGPoint.zero
+        let emotionCount = emotions.count
+        for i in 0 ..< emotionCount {
+            let row = i / emotionCountPerRow
+            emotionOrigin.x = settings.padding.left + (settings.emotionSize.width + emotionHorizonSpacing) * CGFloat(i % emotionCountPerRow)
+            emotionOrigin.y = settings.padding.top + (settings.emotionSize.height + emotionVerticalSpacing) * CGFloat(row)
+            var emotionRect = CGRect(x: emotionOrigin.x, y: emotionOrigin.y, width: settings.emotionSize.width, height: settings.emotionSize.height)
+            let emotionHittingRect = emotionRect.insetEdge(settings.emotionSelectedBgInsets)
+            emotionHittingRects.append(emotionHittingRect)
+            let emotion = emotions[i]
+            
+        }
+    }
+    
+    func drawImage(_ image: UIImage, inRect contextRect: CGRect) {
+        let imageSize = image.size
+        let horizontalRatio =
     }
 }
 
