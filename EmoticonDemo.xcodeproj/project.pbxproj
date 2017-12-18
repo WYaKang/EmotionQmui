@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A41B0B5E1FE60A2E006C820A /* ATEmotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41B0B5D1FE60A2E006C820A /* ATEmotionManager.swift */; };
+		A41B0B5F1FE6999B006C820A /* QMUI_QQEmotion.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A41B0B5B1FE41BEB006C820A /* QMUI_QQEmotion.bundle */; };
 		A4C3B98D1FDD43EC008AB90D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C3B98C1FDD43EC008AB90D /* AppDelegate.swift */; };
 		A4C3B98F1FDD43EC008AB90D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C3B98E1FDD43EC008AB90D /* ViewController.swift */; };
 		A4C3B9921FDD43EC008AB90D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C3B9901FDD43EC008AB90D /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A41B0B5B1FE41BEB006C820A /* QMUI_QQEmotion.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = QMUI_QQEmotion.bundle; sourceTree = "<group>"; };
+		A41B0B5D1FE60A2E006C820A /* ATEmotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATEmotionManager.swift; sourceTree = "<group>"; };
 		A4C3B9891FDD43EC008AB90D /* EmoticonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmoticonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4C3B98C1FDD43EC008AB90D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4C3B98E1FDD43EC008AB90D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,9 +69,11 @@
 				A4C3B98C1FDD43EC008AB90D /* AppDelegate.swift */,
 				A4C3B98E1FDD43EC008AB90D /* ViewController.swift */,
 				A4C3B99E1FDD44F8008AB90D /* ATEmotionView.swift */,
+				A41B0B5D1FE60A2E006C820A /* ATEmotionManager.swift */,
 				A4C3B9A51FDD7AD8008AB90D /* Rect+Extension.swift */,
 				A4C3B9A01FDD5789008AB90D /* Protocol */,
 				A4C3B9901FDD43EC008AB90D /* Main.storyboard */,
+				A41B0B5B1FE41BEB006C820A /* QMUI_QQEmotion.bundle */,
 				A4C3B9931FDD43EC008AB90D /* Assets.xcassets */,
 				A4C3B9951FDD43EC008AB90D /* LaunchScreen.storyboard */,
 				A4C3B9981FDD43EC008AB90D /* Info.plist */,
@@ -143,6 +149,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A41B0B5F1FE6999B006C820A /* QMUI_QQEmotion.bundle in Resources */,
 				A4C3B9971FDD43EC008AB90D /* LaunchScreen.storyboard in Resources */,
 				A4C3B9941FDD43EC008AB90D /* Assets.xcassets in Resources */,
 				A4C3B9921FDD43EC008AB90D /* Main.storyboard in Resources */,
@@ -157,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4C3B98F1FDD43EC008AB90D /* ViewController.swift in Sources */,
+				A41B0B5E1FE60A2E006C820A /* ATEmotionManager.swift in Sources */,
 				A4C3B98D1FDD43EC008AB90D /* AppDelegate.swift in Sources */,
 				A4C3B9A41FDD5B41008AB90D /* ATEmotionSettings.swift in Sources */,
 				A4C3B9A61FDD7AD8008AB90D /* Rect+Extension.swift in Sources */,
@@ -235,7 +243,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -286,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

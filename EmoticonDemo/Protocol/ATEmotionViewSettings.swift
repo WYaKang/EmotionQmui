@@ -24,35 +24,32 @@ public protocol ATEmotionType {
 }
 
 public protocol ATEmotionViewSettings {
-
-    /// 选中表情回掉
-    var didSelectEmotion: (_ index: Int, _ emotion: ATEmotionType) -> Void { get set}
     
-    /// 删除按钮的点击事件回调
-    var didSelectDelete: () -> Void { get set }
+//    ///
+//    var paddingInPage: UIEdgeInsets { get set }
     
-    /// 每一页表情的上下左右padding，默认为{18, 18, 65, 18}
-    var paddingInPage: UIEdgeInsets { get set }
+//    /// 每一页表情允许的最大行数，默认为3
+//    var numberOfRowsPerPage: Int { get set }
+//    
+//    /// 表情的图片大小，不管`QMUIEmotion.image.size`多大，都会被缩放到`emotionSize`里显示，默认为{30, 30}
+//    var emotionSize: CGSize { get set }
+//    
+//    /// 表情点击时的背景遮罩相对于`emotionSize`往外拓展的区域，负值表示遮罩比表情还大，正值表示遮罩比表情还小，默认为{-3, -3, -3, -3}
+//    var emotionSelectedBgInsets: UIEdgeInsets { get set }
+//    
+//    /// 表情与表情之间的最小水平间距，默认为10
+//    var minimumEmotionHorizontalSpacing: CGFloat { get set }
     
-    /// 每一页表情允许的最大行数，默认为3
-    var numberOfRowsPerPage: Int { get set }
     
-    /// 表情的图片大小，不管`QMUIEmotion.image.size`多大，都会被缩放到`emotionSize`里显示，默认为{30, 30}
-    var emotionSize: CGSize { get set }
-    
-    /// 表情点击时的背景遮罩相对于`emotionSize`往外拓展的区域，负值表示遮罩比表情还大，正值表示遮罩比表情还小，默认为{-3, -3, -3, -3}
-    var emotionSelectedBgInsets: UIEdgeInsets { get set }
-    
-    /// 表情与表情之间的最小水平间距，默认为10
-    var minimumEmotionHorizontalSpacing: CGFloat { get set }
-    
-    /// 表情面板右下角的删除按钮的图片
-    var deleteButtonImage: UIImage { get set }
 
 }
 
 public protocol ATEmotionPageCellSettings {
-    /// 整个pageView内部的padding
+    
+    /// 表情面板右下角的删除按钮的图片
+    var deleteButtonImage: UIImage { get set }
+    
+    /// 每一页表情的上下左右padding，默认为{18, 18, 65, 18}
     var padding: UIEdgeInsets { get set }
     
     /// 每个pageView能展示表情的行数
