@@ -29,6 +29,8 @@ public extension KineticCompatiable {
 
 extension UITextField: KineticCompatiable {}
 
+extension NSString: KineticCompatiable {}
+
 
 
 

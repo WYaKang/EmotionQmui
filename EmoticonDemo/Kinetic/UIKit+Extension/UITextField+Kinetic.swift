@@ -18,5 +18,21 @@ extension Kinetic where Base: UITextField {
         let length = base.offset(from: base.beginningOfDocument, to: selectedRange.end)
         return NSRange(location: location, length: length)
     }
+}
+
+
+extension Kinetic where Base: NSString {
+    func removeCharacter(at index: Int) -> String {
+        let rangeForRemove: NSRange = base.rangeOfComposedCharacterSequence(at: index)
+        let resultString: String = base.replacingCharacters(in: rangeForRemove, with: "")
+        return resultString
+    }
+    
+    func removeCharacterlast() -> String {
+        return removeCharacter(at: base.length - 1)
+    }
     
 }
+
+
+
