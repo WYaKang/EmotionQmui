@@ -49,4 +49,23 @@ final class ATEmotionCellSettings: ATEmotionPageCellSettings {
     var minimumHorizontalSpacing: CGFloat = 10
 }
 
+final class ATEmotionBigCellSettings: ATEmotionPageCellSettings {
+    /// 表情面板右下角的删除按钮的图片
+    var deleteButtonImage: UIImage = UIImage()
+    
+    /// 整个pageView内部的padding
+    var padding: UIEdgeInsets = UIEdgeInsets(top: 45, left: 18, bottom: 65, right: 18)
+    
+    /// 每个pageView能展示表情的行数
+    var numberOfRows: Int = 2
+    
+    /// 每个表情的绘制区域大小，表情图片最终会以UIViewContentModeScaleAspectFit的方式撑满这个大小。表情计算布局时也是基于这个大小来算的。
+    var emotionSize: CGSize = CGSize(width: 56.5, height: 56.5)
+    
+    /// 点击表情时出现的遮罩要在表情所在的矩形位置拓展多少空间，负值表示遮罩比emotionSize更大，正值表示遮罩比emotionSize更小。最终判断表情点击区域时也是以拓展后的区域来判定的
+    var emotionSelectedBgInsets: UIEdgeInsets = UIEdgeInsets(top: -3, left: -3, bottom: -3, right: -3)
+    
+    /// 表情与表情之间的水平间距的最小值，实际值可能比这个要大一点（pageView会把剩余空间分配到表情的水平间距里）
+    var minimumHorizontalSpacing: CGFloat = 10
+}
 

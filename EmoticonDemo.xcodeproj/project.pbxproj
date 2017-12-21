@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		A41B0B5E1FE60A2E006C820A /* ATEmotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41B0B5D1FE60A2E006C820A /* ATEmotionManager.swift */; };
 		A41B0B5F1FE6999B006C820A /* QMUI_QQEmotion.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A41B0B5B1FE41BEB006C820A /* QMUI_QQEmotion.bundle */; };
+		A4228E911FEA078900F28775 /* String+Kinetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4228E901FEA078900F28775 /* String+Kinetic.swift */; };
+		A446C78A1FEB801700BC9CC9 /* UIImage+Kinetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A446C7891FEB801700BC9CC9 /* UIImage+Kinetic.swift */; };
+		A446C78B1FEB8CDA00BC9CC9 /* EmotionsStore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A4228ECC1FEA56C700F28775 /* EmotionsStore.bundle */; };
+		A44F69F01FE94586004660A6 /* Kinetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44F69EE1FE94464004660A6 /* Kinetic.swift */; };
+		A44F69F11FE94586004660A6 /* UITextField+Kinetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44F69EF1FE94464004660A6 /* UITextField+Kinetic.swift */; };
+		A45DA5F81FE9F48000283D1D /* NSString+Kinetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45DA5F71FE9F48000283D1D /* NSString+Kinetic.swift */; };
+		A4A905F81FEB5B9B007C358A /* StoreEmotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A905F71FEB5B9A007C358A /* StoreEmotionManager.swift */; };
 		A4C3B98D1FDD43EC008AB90D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C3B98C1FDD43EC008AB90D /* AppDelegate.swift */; };
 		A4C3B98F1FDD43EC008AB90D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C3B98E1FDD43EC008AB90D /* ViewController.swift */; };
 		A4C3B9921FDD43EC008AB90D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C3B9901FDD43EC008AB90D /* Main.storyboard */; };
@@ -23,6 +30,13 @@
 /* Begin PBXFileReference section */
 		A41B0B5B1FE41BEB006C820A /* QMUI_QQEmotion.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = QMUI_QQEmotion.bundle; sourceTree = "<group>"; };
 		A41B0B5D1FE60A2E006C820A /* ATEmotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATEmotionManager.swift; sourceTree = "<group>"; };
+		A4228E901FEA078900F28775 /* String+Kinetic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Kinetic.swift"; sourceTree = "<group>"; };
+		A4228ECC1FEA56C700F28775 /* EmotionsStore.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EmotionsStore.bundle; sourceTree = "<group>"; };
+		A446C7891FEB801700BC9CC9 /* UIImage+Kinetic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Kinetic.swift"; sourceTree = "<group>"; };
+		A44F69EE1FE94464004660A6 /* Kinetic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kinetic.swift; sourceTree = "<group>"; };
+		A44F69EF1FE94464004660A6 /* UITextField+Kinetic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Kinetic.swift"; sourceTree = "<group>"; };
+		A45DA5F71FE9F48000283D1D /* NSString+Kinetic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSString+Kinetic.swift"; sourceTree = "<group>"; };
+		A4A905F71FEB5B9A007C358A /* StoreEmotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreEmotionManager.swift; sourceTree = "<group>"; };
 		A4C3B9891FDD43EC008AB90D /* EmoticonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmoticonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4C3B98C1FDD43EC008AB90D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4C3B98E1FDD43EC008AB90D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +61,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A44F69AD1FE92AC6004660A6 /* UIKit+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A446C7891FEB801700BC9CC9 /* UIImage+Kinetic.swift */,
+				A44F69EF1FE94464004660A6 /* UITextField+Kinetic.swift */,
+			);
+			path = "UIKit+Extension";
+			sourceTree = "<group>";
+		};
+		A45DA5F51FE9F40C00283D1D /* Foundation+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A45DA5F71FE9F48000283D1D /* NSString+Kinetic.swift */,
+				A4228E901FEA078900F28775 /* String+Kinetic.swift */,
+			);
+			path = "Foundation+Extension";
+			sourceTree = "<group>";
+		};
+		A45DA5F61FE9F44D00283D1D /* Kinetic */ = {
+			isa = PBXGroup;
+			children = (
+				A44F69EE1FE94464004660A6 /* Kinetic.swift */,
+				A45DA5F51FE9F40C00283D1D /* Foundation+Extension */,
+				A44F69AD1FE92AC6004660A6 /* UIKit+Extension */,
+			);
+			path = Kinetic;
+			sourceTree = "<group>";
+		};
 		A4C3B9801FDD43EC008AB90D = {
 			isa = PBXGroup;
 			children = (
@@ -66,13 +108,16 @@
 		A4C3B98B1FDD43EC008AB90D /* EmoticonDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A45DA5F61FE9F44D00283D1D /* Kinetic */,
 				A4C3B98C1FDD43EC008AB90D /* AppDelegate.swift */,
 				A4C3B98E1FDD43EC008AB90D /* ViewController.swift */,
 				A4C3B99E1FDD44F8008AB90D /* ATEmotionView.swift */,
 				A41B0B5D1FE60A2E006C820A /* ATEmotionManager.swift */,
+				A4A905F71FEB5B9A007C358A /* StoreEmotionManager.swift */,
 				A4C3B9A51FDD7AD8008AB90D /* Rect+Extension.swift */,
 				A4C3B9A01FDD5789008AB90D /* Protocol */,
 				A4C3B9901FDD43EC008AB90D /* Main.storyboard */,
+				A4228ECC1FEA56C700F28775 /* EmotionsStore.bundle */,
 				A41B0B5B1FE41BEB006C820A /* QMUI_QQEmotion.bundle */,
 				A4C3B9931FDD43EC008AB90D /* Assets.xcassets */,
 				A4C3B9951FDD43EC008AB90D /* LaunchScreen.storyboard */,
@@ -149,6 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A446C78B1FEB8CDA00BC9CC9 /* EmotionsStore.bundle in Resources */,
 				A41B0B5F1FE6999B006C820A /* QMUI_QQEmotion.bundle in Resources */,
 				A4C3B9971FDD43EC008AB90D /* LaunchScreen.storyboard in Resources */,
 				A4C3B9941FDD43EC008AB90D /* Assets.xcassets in Resources */,
@@ -163,13 +209,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A44F69F01FE94586004660A6 /* Kinetic.swift in Sources */,
+				A44F69F11FE94586004660A6 /* UITextField+Kinetic.swift in Sources */,
+				A4228E911FEA078900F28775 /* String+Kinetic.swift in Sources */,
 				A4C3B98F1FDD43EC008AB90D /* ViewController.swift in Sources */,
 				A41B0B5E1FE60A2E006C820A /* ATEmotionManager.swift in Sources */,
 				A4C3B98D1FDD43EC008AB90D /* AppDelegate.swift in Sources */,
 				A4C3B9A41FDD5B41008AB90D /* ATEmotionSettings.swift in Sources */,
 				A4C3B9A61FDD7AD8008AB90D /* Rect+Extension.swift in Sources */,
+				A45DA5F81FE9F48000283D1D /* NSString+Kinetic.swift in Sources */,
 				A4C3B9A21FDD57C2008AB90D /* ATEmotionViewSettings.swift in Sources */,
 				A4C3B99F1FDD44F8008AB90D /* ATEmotionView.swift in Sources */,
+				A446C78A1FEB801700BC9CC9 /* UIImage+Kinetic.swift in Sources */,
+				A4A905F81FEB5B9B007C358A /* StoreEmotionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,9 +362,9 @@
 				DEVELOPMENT_TEAM = UHKD6CZHH3;
 				INFOPLIST_FILE = EmoticonDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.catxia.win.EmoticonDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.catxia.win.BugTD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -325,9 +377,9 @@
 				DEVELOPMENT_TEAM = UHKD6CZHH3;
 				INFOPLIST_FILE = EmoticonDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.catxia.win.EmoticonDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.catxia.win.BugTD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

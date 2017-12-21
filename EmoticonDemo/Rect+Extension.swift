@@ -55,7 +55,6 @@ extension UIEdgeInsets {
 
 extension CGRect {
     
-    
     func insetEdge(_ insets: UIEdgeInsets) -> CGRect {
         var _rect = self
         _rect.origin.x += insets.left
@@ -80,7 +79,7 @@ extension CGRect {
     
     /// 计算view的垂直居中，传入父view和子view的frame，返回子view在垂直居中时的y值
     mutating func minYVerticallyCenter(inParentRect: CGRect, childRect: CGRect) -> CGFloat {
-        let h = (inParentRect.width - childRect.width) / 2.0
+        let h = (inParentRect.height - childRect.height) / 2.0
         return flat(h)
     }
     
@@ -97,16 +96,19 @@ extension CGRect {
         _rect.origin.y = flat(y)
         return _rect
     }
-    
-    
-    
 }
 
 
 extension CGSize {
+    
     var isEmpty: Bool {
         return self.width <= 0 || self.height <= 0
     }
+    
+    var makeRect: CGRect {
+        return CGRect(x: 0, y: 0, width: self.width, height: self.height)
+    }
+    
     
 }
 

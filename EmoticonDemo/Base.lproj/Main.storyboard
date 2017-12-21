@@ -20,11 +20,31 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gK5-3q-mqg">
+                                <rect key="frame" x="10" y="40" width="355" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="ylt-29-AgL"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gK5-3q-mqg" firstAttribute="top" secondItem="0Zf-VB-cqi" secondAttribute="bottom" constant="20" id="L0J-ai-kzK"/>
+                            <constraint firstItem="gK5-3q-mqg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="ceZ-OQ-3zy"/>
+                            <constraint firstAttribute="trailing" secondItem="gK5-3q-mqg" secondAttribute="trailing" constant="10" id="rkL-5V-fEG"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="gK5-3q-mqg" id="Lo2-VM-pji"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="119.1904047976012"/>
         </scene>
     </scenes>
 </document>

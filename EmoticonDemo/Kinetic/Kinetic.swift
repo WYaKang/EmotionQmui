@@ -27,9 +27,11 @@ public extension KineticCompatiable {
     }
 }
 
+extension UIImage: KineticCompatiable {}
 extension UITextField: KineticCompatiable {}
 
 extension NSString: KineticCompatiable {}
+extension String: KineticCompatiable {}
 
 
 

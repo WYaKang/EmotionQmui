@@ -11,17 +11,19 @@ import UIKit
 public protocol ATEmotionType {
     
     /// 当前表情的标识符，可用于区分不同表情
+    /// 大表情：图片本身的MD5就是唯一标示
     var identifier: String { get set }
     
     /// 当前表情展示出来的名字，可用于输入框里的占位文字，例如“[委屈]”
+    /// 大表情：商店中下载的是有名字的，用这个显示。自己收藏的没有名字，这个为空“[委屈]”
     var displayName: String { get set }
     
     /// 表情对应的图片。若表情图片存放于项目内，则建议用当前表情的`identifier`作为图片名
+    /// 大表情：加载的路径是不一样的, 大表情时这个为nil
     var image: UIImage? { get set }
-    
-    /// 有可能是字符串
-    var emojiStr: String? { get set }
 }
+
+
 
 public protocol ATEmotionViewSettings {
     
